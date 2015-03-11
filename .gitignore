@@ -1,0 +1,9 @@
+node_modules
+target
+bower_components
+app/templates.js
+
+npm-debug.log
+testResults/*
+**/*.log
+.idea/**
