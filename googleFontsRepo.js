@@ -27,7 +27,13 @@ fontRouter['get'](
         httpreq.get(requestUrl, function (err, response){
             if (err){
                 console.log(err);
+                res.send(500, {error:err});
             }else {
+                if (response.statusCode !== 200) {
+                    res.status(response.statusCode).send(response.body);
+                    return
+                }
+
                 var cssString = response.body;
                 var files = [];
 
