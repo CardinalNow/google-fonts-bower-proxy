@@ -79,5 +79,6 @@ fontRouter['get'](
 
 var app = express()
 app.use('/googleFonts', fontRouter);
+app.use('/', express.static(__dirname + '/'));
 app.listen(port);
 console.log('Started font repo server up on port ' + port);

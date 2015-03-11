@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>It Works!</h1>
+    <p>This app will scrape out the fonts from google's font api and package them as a local bower component.</p>
+    <p>Usage:<br />
+        choose your google font, once done, examine the link created: <br />
+        &lt;link href=&#39;http://fonts.googleapis.com/css?<b>family=Open+Sans</b>&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;&gt; <br />
+        scrape out the <b>bolded</b> part of the url and append it here:<br />
+        <br />
+        bower install --save https://google-fonts.herokuapp.com/googleFonts/<b>The name you want</b>?<b>The font parameter</b><br />
+        <br />
+        Example:<br />
+        <br />
+        bower install --save https://google-fonts.herokuapp.com/googleFonts/openSans?family=Open+Sans<br />
+        <br />
+        This will install the font into bower_components/<b>The name you chose</b>/<b>the name you chose</b>.css<br />
+        <br />
+    </p>
+</body>
+</html>
