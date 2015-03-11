@@ -1,0 +1,18 @@
+{
+  "name": "googleFontsRepo",
+  "version": "1.0.0",
+  "description": "A dynamic repo that proxies google fonts for consumption by bower.",
+  "main": "googleFontsRepo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^0.14.3",
+    "body-parser": "^1.12.0",
+    "express": "^4.12.2",
+    "httpreq": "^0.4.6",
+    "string-stream": "0.0.7"
+  }
+}
