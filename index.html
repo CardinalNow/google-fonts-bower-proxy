@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <h1>It Works!</h1>
-    <p>This app will scrape out the fonts from google's font api and package them as a local bower component.</p>
-    <p>Usage:<br />
-        choose your google font, once done, examine the link created: <br />
-        &lt;link href=&#39;http://fonts.googleapis.com/css?<b>family=Open+Sans</b>&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;&gt; <br />
-        scrape out the <b>bolded</b> part of the url and append it here:<br />
-        <br />
-        bower install --save https://google-fonts.herokuapp.com/googleFonts/<b>The name you want</b>?<b>The font parameter</b><br />
-        <br />
-        Example:<br />
-        <br />
-        bower install --save https://google-fonts.herokuapp.com/googleFonts/openSans?family=Open+Sans<br />
-        <br />
-        This will install the font into bower_components/<b>The name you chose</b>/<b>the name you chose</b>.css<br />
-        <br />
-    </p>
-</body>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Google Fonts</title>
+    </head>
+    <body>
+        <p>
+            This api acts as a bower proxy to <a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a>. It will scrape out the fonts from Google's api and package them as a
+            local bower component.
+        </p>
+
+        <h2>Usage:</h2>
+
+        <p>Choose your google font, once done, examine the link created:</p>
+
+        <p>
+            <!-- HTML generated using hilite.me -->
+
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;link</span> <span style="color: #0000CC">href=</span><span
+                    style="background-color: #fff0f0">&#39;http://fonts.googleapis.com/css?<b>family=Open+Sans</b>&#39;</span> <span
+                    style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&#39;stylesheet&#39;</span> <span
+                    style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&#39;text/css&#39;</span><span
+                    style="color: #007700">&gt;</span></pre>
+            </div>
+        </p>
+
+        <p>
+            The scrape out the query string of the URL (<b>bolded</b> in the code snippet) and append it to the following:
+        </p>
+
+
+        <p>
+            <!-- HTML generated using hilite.me -->
+
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">bower install --save https://google-fonts.herokuapp.com/googleFonts/<b>nameOfPackage</b>?<b>queryString</b></pre>
+            </div>
+
+        </p>
+
+        <h3>Example:</h3>
+
+        <p>
+            <!-- HTML generated using hilite.me -->
+
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">bower install --save https://google-fonts.herokuapp.com/googleFonts/openSans?family<span style="color: #333333">=</span>Open+Sans</pre>
+            </div>
+
+        </p>
+
+        <p>
+            This will install the font into:
+        </p>
+
+        <p>
+            <!-- HTML generated using hilite.me -->
+
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">bower_components/<b>The name you chose</b>/<b>the font you chose</b>.css</pre>
+            </div>
+        </p>
+    </body>
 </html>
