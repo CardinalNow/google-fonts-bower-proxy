@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+}
+
+#container {
+    background-color: white;
+    width: 95%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+#header {
+    background-color: white;
+    padding: 30px 20px 0px 20px;
+}
+
+#header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+    width:100%;
+}
+
+#header p{
+    padding:20px 10px 10px 15px;
+}
+
+#title {
+    padding: 0 35px 0 35px;
+    font-family: HelveticaNeue;
+    color: #3e3e3e;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#group1 {
+    height: 135px;
+    padding: 0 20px 0 35px;
+}
+
+#group1 span.text{
+    padding-right: 20px;
+}
+
+#group1 div{
+    margin-top: 20px;
+}
+
+@media (min-width: 1200px){
+    #group1 span.text{
+        width: 30%;
+        float:left;
+    }
+}
+
+
+#leftcolumn {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 20px;
+    float: left;
+}
+
+#rightcolumn {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 0px;
+    float: left;
+}
+
+#footer {
+    margin: 20px;
+    background-color: white;
+    height: 75px;
+}
+
+h2 {
+    color: #3e3e3e;
+}
+
+a {
+    color: #006ca8;
+    text-decoration: none;
+}

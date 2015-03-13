@@ -1,66 +1,84 @@
 <!DOCTYPE html>
+<!-- saved from url=(0039)https://google-fonts.azurewebsites.net/ -->
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <title>Google Fonts</title>
-    </head>
-    <body>
-        <p>
-            This api acts as a <a href="http://bower.io/" target="_blank">Bower</a> proxy to <a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a>. It will scrape out the fonts from Google's api and package them as a
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link href="css/api.css" rel="stylesheet"/>
+    <title>Google Fonts API</title>
+</head>
+
+<body>
+
+<div id="container">
+    <div id="header">
+        <img src="img/header.png" alt="" style="max-width:533px;"/>
+
+        <p>This api acts as a <a href="http://bower.io/" target="_blank">Bower</a>
+            proxy to <a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a>. It will scrape out the
+            fonts from Google's api and package them as a
             local bower component.
         </p>
+    </div>
 
-        <h2>Usage:</h2>
+    <div id="title">
+        <h2>Usage</h2>
+    </div>
 
-        <p>Choose your google font, once done, examine the link created:</p>
+    <div id="group1">
+        <span class="text">Choose your google font, once done, examine the link created:</span>
+        <!-- HTML generated using hilite.me -->
 
-        <p>
-            <!-- HTML generated using hilite.me -->
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;link</span> <span
+                        style="color: #0000CC">href=</span><span
+                        style="background-color: #fff0f0">&#39;http://fonts.googleapis.com/css?<b>family=Open+Sans</b>&#39;</span> <span
+                        style="color: #0000CC">rel=</span><span
+                        style="background-color: #fff0f0">&#39;stylesheet&#39;</span> <span
+                        style="color: #0000CC">type=</span><span
+                        style="background-color: #fff0f0">&#39;text/css&#39;</span><span
+                        style="color: #007700">&gt;</span></pre>
+        </div>
+    </div>
 
-            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;link</span> <span style="color: #0000CC">href=</span><span
-                    style="background-color: #fff0f0">&#39;http://fonts.googleapis.com/css?<b>family=Open+Sans</b>&#39;</span> <span
-                    style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&#39;stylesheet&#39;</span> <span
-                    style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&#39;text/css&#39;</span><span
-                    style="color: #007700">&gt;</span></pre>
-            </div>
-        </p>
+    <div id="group1">
+        <span class="text">The scrape out the query string of the URL (<b>bolded</b> in the code snippet) and append it to the following:</span>
+        <!-- HTML generated using hilite.me -->
 
-        <p>
-            The scrape out the query string of the URL (<b>bolded</b> in the code snippet) and append it to the following:
-        </p>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+            <pre style="margin: 0; line-height: 125%">bower install --save https://google-fonts.herokuapp.com/googleFonts/<b>nameOfPackage</b>?<b>queryString</b></pre>
+        </div>
+    </div>
 
+    <div id="title"><h2>Example</h2>
+    </div>
 
-        <p>
-            <!-- HTML generated using hilite.me -->
+    <div id="group1">
+        <span class="text">This is an example of what the API code will look like that you put into your code.</span>
 
-            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">bower install --save https://google-fonts.herokuapp.com/googleFonts/<b>nameOfPackage</b>?<b>queryString</b></pre>
-            </div>
+        <!-- HTML generated using hilite.me -->
 
-        </p>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+            <pre style="margin: 0; line-height: 125%">bower install --save https://google-fonts.herokuapp.com/googleFonts/openSans?family<span
+                    style="color: #333333">=</span>Open+Sans</pre>
+        </div>
+    </div>
 
-        <h3>Example:</h3>
+    <div id="group1">
+        <span class="text">This will install the font into:</span>
 
-        <p>
-            <!-- HTML generated using hilite.me -->
+        <!-- HTML generated using hilite.me -->
 
-            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">bower install --save https://google-fonts.herokuapp.com/googleFonts/openSans?family<span style="color: #333333">=</span>Open+Sans</pre>
-            </div>
+        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+            <pre style="margin: 0; line-height: 125%">bower_components/<b>The name you chose</b>/<b>the font you
+                chose</b>.css</pre>
+        </div>
+    </div>
 
-        </p>
+    <div id="footer"><img style="float:left; padding: 15px 0 0 20px" src="img/cardinal-logo.png" alt=""/>
 
-        <p>
-            This will install the font into:
-        </p>
+        <p style="float:right; padding: 0 15px 0 0;"><a href="#">Back to Cardinal Solutions Blog</a></p>
+    </div>
+</div>
 
-        <p>
-            <!-- HTML generated using hilite.me -->
-
-            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">bower_components/<b>The name you chose</b>/<b>the font you chose</b>.css</pre>
-            </div>
-        </p>
-    </body>
-</html>
+</body>
