@@ -25,7 +25,7 @@ fontRouter['get'](
             indexOfFamilySeperator = req.originalUrl.length;
         }
         var requestedFontName = req.originalUrl.substring(req.originalUrl.indexOf('=')+1, indexOfFamilySeperator);
-        requestedFontName = requestedFontName.replace("+", "");
+        requestedFontName = requestedFontName.replace(/\+/g, "");
         requestedFontName = requestedFontName.charAt(0).toLocaleLowerCase()+requestedFontName.substr(1);
         
         httpreq.get(requestUrl, function (err, response){
