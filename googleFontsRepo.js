@@ -51,6 +51,13 @@ fontRouter['get'](
                     files.forEach(function(file){
                         dl.append(file.file, {name:file.name});
                     });
+
+                    dl.append(JSON.stringify({
+                        "main": [
+                            "*.ttf",
+                            "*.css"
+                        ]
+                    }), { name: 'bower.json' });
                     dl.finalize(function (err) {
                         if (err) res.send(500);
                     })
