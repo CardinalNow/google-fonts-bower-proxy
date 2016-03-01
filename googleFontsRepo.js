@@ -53,6 +53,7 @@ fontRouter['get'](
                     });
 
                     dl.append(JSON.stringify({
+                        "name": requestedFontName,
                         "main": [
                             "*.ttf",
                             "*.css"
