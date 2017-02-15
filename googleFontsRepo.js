@@ -27,7 +27,9 @@ fontRouter['get'](
         var requestedFontName = req.originalUrl.substring(req.originalUrl.indexOf('=')+1, indexOfFamilySeperator);
         requestedFontName = requestedFontName.replace(/\+/g, "");
         requestedFontName = requestedFontName.charAt(0).toLocaleLowerCase()+requestedFontName.substr(1);
-        
+
+        var requestedPackageName = req.originalUrl.substring(req.originalUrl.lastIndexOf("/")+1, req.originalUrl.indexOf('?'));
+
         httpreq.get(requestUrl, function (err, response){
             if (err){
                 console.log(err);
@@ -53,7 +55,7 @@ fontRouter['get'](
                     });
 
                     dl.append(JSON.stringify({
-                        "name": requestedFontName,
+                        "name": requestedPackageName,
                         "main": [
                             "*.ttf",
                             "*.css"
